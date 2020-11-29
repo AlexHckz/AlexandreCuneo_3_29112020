@@ -1,9 +1,33 @@
+/*reset margin et padding*/
 body {
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
-#index {
-  font-size: 1em;
+ul {
+	margin: 0;
+	padding: 0;
 }
+li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/*elements du header*/
+header figure {
+	display: flex;
+    justify-content: center;
+}
+.logo {
+	width: 75%;
+	height: auto;
+}
+
+
+
 
 /*# sourceMappingURL=style.css.map */
