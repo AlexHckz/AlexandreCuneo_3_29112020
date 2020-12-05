@@ -38,6 +38,9 @@ header {
 .logo {
 	width: 56%;
 	height: auto;
+		&.menu1 {
+			width: 165px;
+		}
 }
 
 /*elements de la section 1*/
@@ -173,7 +176,6 @@ footer {
 		}
 	}
 }
-
 
 .footer-figure {
 	margin: 0;
