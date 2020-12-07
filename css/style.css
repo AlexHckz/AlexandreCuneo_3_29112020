@@ -7,15 +7,8 @@ body {
   flex-wrap: nowrap;
   font-family: "Roboto", sans-serif;
 }
-h1 {
-  margin: 0;
-  padding: 0;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-li {
+
+h1, ul, li {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -33,8 +26,8 @@ header figure {
 }
 
 .logo {
-  width: 56%;
-  height: auto;
+  height: 30px;
+  width: auto;
 }
 .logo.menu1 {
   width: 165px;
@@ -78,6 +71,7 @@ header figure {
   border: none;
   color: #ffffff;
   background: #f074da;
+  font-size: 18px;
 }
 
 /*elements de la section 2*/
@@ -158,18 +152,52 @@ footer ul li .fa, footer ul li .fas {
   margin-right: 1%;
   color: #ffffff;
 }
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
 
 .footer-figure {
   margin: 0;
   padding: 26px 20px 10px 20px;
 }
 .footer-figure img {
+  filter: invert(100%);
   width: 30%;
   margin: 0;
   padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
+/* MEDIA QUERY DESKTOP*/
+@media (min-width: 768px) {
+  .how-section ul li {
+    font-size: 20px;
+  }
+  .how-section .numbers {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+
+  .welcome-section button {
+    font-size: 20px;
+    height: 60px;
+  }
+
+  .restaurants-section ul li h2, .restaurants-section ul li p {
+    font-size: 25px;
+  }
+
+  .footer-figure img {
+    width: auto;
+    height: 30px;
+  }
+}
 .menuPicture {
   height: 260px;
   width: 100%;
@@ -183,13 +211,11 @@ footer ul li .fa, footer ul li .fas {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -40px;
+  margin: -40px 0 0 0;
+  padding: 0;
   z-index: 3;
-  height: 1196px;
   width: 100%;
   background-color: #f6f6f6;
-  margin: 0;
-  padding: 0;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
 }
@@ -207,6 +233,99 @@ footer ul li .fa, footer ul li .fas {
 .menuDishes .restaurantName .fa-heart {
   font-size: 24px;
   margin-right: 38px;
+}
+
+.menu-titles {
+  margin-left: 20px;
+  margin-top: 42px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.menu-titles.entree-title {
+  margin-top: 0;
+}
+
+.blocs-menu .border {
+  height: 0;
+  width: 40px;
+  margin-left: 20px;
+  margin-top: 9px;
+  border-bottom: solid 3px #99e2d0;
+}
+.blocs-menu ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 75px;
+  margin: 12px 14px;
+  padding: 10px 12px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.blocs-menu ul li h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+.blocs-menu ul li p {
+  margin: 0;
+  padding: 0;
+  height: 1em;
+  font-size: 16px;
+}
+.blocs-menu ul li p.ingredients {
+  width: 92%;
+}
+.blocs-menu ul li p.prix {
+  width: 5%;
+}
+
+.bouton-commande {
+  padding: 95px 0;
+}
+.bouton-commande button {
+  width: calc(100% - 190px);
+  height: 50px;
+  margin: 2% 82px;
+  border-radius: 30px;
+  border: none;
+  color: #ffffff;
+  background: #f074da;
+  font-size: 18px;
+}
+
+/* MEDIA QUERY DESKTOP */
+@media (min-width: 768px) {
+  .menu-titles {
+    font-size: 25px;
+  }
+
+  .blocs-menu ul li h3 {
+    font-size: 20px;
+  }
+  .blocs-menu ul li p {
+    font-size: 20px;
+  }
+  .blocs-menu ul li p.ingredients {
+    width: 94%;
+  }
+  .blocs-menu ul li p.prix {
+    width: 6%;
+    font-size: 20px;
+  }
+
+  .bouton-commande button {
+    font-size: 25px;
+    height: 65px;
+  }
+
+  footer ul li {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,15 +8,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-	margin: 0;
-	padding: 0;
-}
-ul {
-	margin: 0;
-	padding: 0;
-}
-li {
+h1 , ul , li {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -36,8 +28,8 @@ header {
 }
 
 .logo {
-	width: 56%;
-	height: auto;
+	height: 30px;
+	width: auto;
 		&.menu1 {
 			width: 165px;
 		}
@@ -85,6 +77,7 @@ header {
 	border: none;
 	color: #ffffff;
 	background: rgba(240,116,218,1);
+	font-size: 18px;
 	}
 }
 	
@@ -174,7 +167,13 @@ footer {
 			margin-right: 1%;
     		color: #ffffff;
 		}
+		a {
+        color: white;
+        text-decoration: none;
+        }
 	}
+
+
 }
 
 .footer-figure {
@@ -182,6 +181,7 @@ footer {
 	padding: 26px 20px 10px 20px;
 
 	img {
+		filter: invert(100%);
 		width: 30%;
 		margin: 0;
 		padding: 0;
@@ -189,3 +189,37 @@ footer {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+	
+/* MEDIA QUERY DESKTOP*/
+@media (min-width: 768px) {
+
+	.how-section {
+		ul li {
+	    font-size: 20px;
+		}
+		.numbers {
+	    width: 30px;
+    	height: 30px;
+		}
+	}
+	.logo {
+	height: 40px;
+	width: auto;
+	}
+	.welcome-section { 
+		button {
+			font-size: 20px;
+			height: 60px;
+		}
+	}
+	.restaurants-section ul li h2, .restaurants-section ul li p {
+    font-size: 25px;
+	}
+	.footer-figure img {
+    width: auto;
+    height: 30px;
+	}
+  
+}
