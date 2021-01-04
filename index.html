@@ -13,12 +13,15 @@
 	<script src="https://kit.fontawesome.com/487b445571.js" crossorigin="anonymous"></script>
 
 </head>
+
+<div class="loading">
+	<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+</div>
+
 <body>
 
 	<header>
-		<figure>
-			<img src="images/logo/ohmyfood.png" class="logo" alt="logo de ohmyfood" width="392" height="68">
-		</figure>
+		<div class="logo">ohmyfood</div>
 	</header>
 
 	<section class="welcome-section">
@@ -61,13 +64,24 @@
 				</figure>
 				<h2>La palette du goût</h2>
 				<p>Ménilmontant</p>
+				<div class="heart-wrapper">
+					<i class="far fa-heart heart-main"></i>
+					<i class="fas fa-heart heart-hover"></i>
+				</div>
 			</li>
 			<li>
 				<figure>
-					<img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+					<img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" id="restau3">
 				</figure>
+				<!-- <div class="wrapper-bottom-infos"> -->
 				<h2>La note enchantée</h2>
 				<p>Charonne</p>
+				<!-- </div> -->
+				<div class="heart-wrapper">
+					<i class="far fa-heart heart-main"></i>
+					<i class="fas fa-heart heart-hover"></i>
+				</div>
+				
 			</li>
 			<li>
 				<figure>
@@ -75,6 +89,10 @@
 				</figure>
 				<h2>À la française</h2>
 				<p>Cité Rouge</p>
+				<div class="heart-wrapper">
+					<i class="far fa-heart heart-main"></i>
+					<i class="fas fa-heart heart-hover"></i>
+				</div>
 			</li>
 			<li>
 				<figure>
@@ -82,13 +100,18 @@
 				</figure>
 				<h2>Le délice des sens</h2>
 				<p>Folie-Méricourt</p>
+				<div class="heart-wrapper">
+					<i class="far fa-heart heart-main"></i>
+					<i class="fas fa-heart heart-hover"></i>
+				</div>
 			</li>
 	</section>
 
 	<footer>
-		<figure class="footer-figure">
+		<div class="footer-figure">ohmyfood</div>
+		<!-- <figure class="footer-figure">
 			<img src="images/logo/ohmyfood.png" class="logo" alt="logo de ohmyfood" width="392" height="68">
-		</figure>
+		</figure> -->
 
 		<ul>
 			<li>
@@ -100,7 +123,7 @@
 				Devenir partenaire
 			</li>
 			<li>Mentions légales</li>
-			<li>Contact</li>
+			<li><a href="mailto:ohmyfood@contact.net">Contact</a></li>
 		</ul>
 	</footer>
 
