@@ -1,0 +1,304 @@
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    margin-top: 42px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 12px;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    z-index: 2;
+  }
+  /*rajouter une keyframe a 80% pour fadeOut le loader directement*/
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes checkBoxAnimation {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 70px;
+  }
+}
+
+@keyframes spinCheckbox {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  justify-content: center;
+  background-color: #fff;
+  z-index: -1;
+  text-align: center;
+  animation-name: fadeOut;
+  animation-duration: 5s;
+  /*animation-fill-mode: forwards;*/  
+}
+
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #f074da;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #f074da transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.menuPicture { 
+    height: 260px;
+    width: 100%;
+    background-size: cover;
+    &.id1 {
+      background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    }
+
+  }
+
+.menuDishes { 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: -40px 0 0 0;
+    padding: 0;
+    z-index: 3;
+    width: 100%;
+    background-color: #f6f6f6;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+
+    .restaurantName {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h1 {
+      display: flex;
+      flex-shrink: 1;
+      font-family: "Shrikhand";
+      margin: 35px 0 35px 18px;
+      }
+      .fa-heart {
+        font-size: 24px;
+        margin-right: 38px;
+      }
+    }
+}
+
+.menu-titles {
+    margin-left: 20px;
+    margin-top: 42px;
+    font-size: 20px;
+    font-weight: 400;
+
+    &.entree-title {
+      margin-top: 0;
+    }
+  }
+
+
+.blocs-menu {
+  .border {
+        height: 0;
+        width: 40px;
+        margin-left: 20px;
+        margin-top: 9px;
+        border-bottom : solid 3px #99e2d0;
+  }
+
+  ul li {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 75px;
+        margin: 12px 14px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 16px;
+        animation-duration: 2s;
+        animation-name: fadeIn;
+        
+        h3 {
+          margin: 0;
+          padding: 0;
+          font-size: 18px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+          height: 1em;
+          font-size: 16px;
+
+            &.ingredients {
+              height: 20px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+            &.prix {
+              display: flex;
+              align-items: flex-end;
+              height: 82%;
+              padding: 0 12px;
+              margin-right: 5%;
+            }
+        }
+
+        .checkbox {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           background-color: #99E2D0;
+           width: 0%;
+           height: 100%;
+           border-top-right-radius: 20px;
+           border-bottom-right-radius: 20px;
+
+           .fa-check-circle { 
+              display: none;
+              width: 0%;
+              color: white;
+           }
+        }
+      }
+
+  ul li:hover {
+    .checkbox {
+      animation: checkBoxAnimation 0.8s forwards;
+    }
+    
+    .fa-check-circle {
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
+      animation: spinCheckbox 0.8s forwards;
+    }
+  }
+}
+
+.bouton-commande {
+  padding: 95px 0;
+
+  button {
+    width: calc(100% - 190px);
+    height: 50px;
+    margin: 2% 82px;
+    border-radius: 30px;
+    border: none;
+    color: #ffffff;
+    background: #f074da;
+    font-size: 18px;
+    background: -webkit-linear-gradient(bottom, rgba(146,86,220,1) 0%, rgba(255,121,217,1) 100%);
+  }
+}
+
+.recette-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0 12px;
+}
+
+
+
+/* MEDIA QUERY IPAD */
+@media (min-width: 576px) {
+
+
+}
+
+
+/* MEDIA QUERY DESKTOP */
+@media (min-width: 768px) {
+
+  .menu-titles {
+    font-size: 25px;
+  }
+  .blocs-menu ul li {
+    p {
+        font-size: 16px;
+        &.ingredients {
+       /* width: 94%;*/
+        }
+        &.prix {
+        width: 6%;
+        font-size: 16px;
+        }
+    }
+  }
+
+  .bouton-commande {
+    display: flex;
+    justify-content: center;
+    
+    button {
+      font-size: 25px; 
+      height: 65px;
+      width: 600px;
+    }
+  }  
+}
+
+@media (min-width: 1024px) {
+  .blocs-menu ul li p.ingredients {
+   /* width: 91%;*/
+  }
+}
