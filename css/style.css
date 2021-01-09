@@ -297,16 +297,12 @@ footer ul li a {
 
   .blocs-menu ul {
     display: flex;
+    flex-wrap: wrap;
   }
   .blocs-menu ul li {
     width: 30%;
   }
 }
-/*@media (max-width: 900px) {
-	.restaurants-section ul li .fa-heart {
-    font-size: 14px;
-	}
-}*/
 /* ANIMATIONS */
 @keyframes fadeIn {
   from {
@@ -456,6 +452,9 @@ footer ul li a {
   margin-left: 20px;
   margin-top: 9px;
   border-bottom: solid 3px #99e2d0;
+}
+.blocs-menu ul {
+  flex-wrap: wrap;
 }
 .blocs-menu ul li {
   display: flex;
