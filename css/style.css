@@ -162,6 +162,10 @@ header figure {
   box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.3);
   position: relative;
 }
+.restaurants-section ul li a {
+  text-decoration: none;
+  color: black;
+}
 .restaurants-section ul li .fa-heart {
   position: absolute;
   right: 50px;
@@ -568,9 +572,9 @@ footer ul li a {
     justify-content: center;
   }
   .bouton-commande button {
-    font-size: 25px;
-    height: 65px;
-    width: 600px;
+    font-size: 20px;
+    height: 60px;
+    width: 300px;
   }
 }
 @media (min-width: 1024px) {
