@@ -355,6 +355,7 @@ footer {
 
 	.blocs-menu ul {
 		display: flex;
+		flex-wrap: wrap;
 		li {
 			width: 30%;
 		}
