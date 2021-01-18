@@ -133,6 +133,9 @@ header figure {
 .how-section ul li .fa, .how-section ul li .fas {
   color: #7e7e7e;
 }
+.how-section ul li:hover {
+  background-color: rgba(146, 86, 220, 0.1);
+}
 .how-section ul li > * {
   margin-right: 11%;
 }
@@ -165,6 +168,17 @@ header figure {
 .restaurants-section ul li a {
   text-decoration: none;
   color: black;
+}
+.restaurants-section ul li a .new {
+  position: absolute;
+  color: #008766;
+  background-color: #99e2d0;
+  width: 66px;
+  right: 15px;
+  top: 15;
+  top: 15px;
+  border-radius: 3px;
+  padding: 6px;
 }
 .restaurants-section ul li .fa-heart {
   position: absolute;
@@ -464,6 +478,7 @@ footer ul li a {
   height: 75px;
   margin: 12px 14px;
   background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   font-weight: 500;
   font-size: 16px;
