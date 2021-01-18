@@ -145,6 +145,10 @@ header {
 		.fa, .fas {
 			color: #7e7e7e;
 		}
+
+		&:hover {
+			background-color: rgba(146, 86, 220, 0.1);
+		}
 	}
 
 	ul li > * {
@@ -181,7 +185,20 @@ header {
 		a {
 			text-decoration: none;
 			color: black;	
+
+			.new {
+			position: absolute;
+		    color: #008766;
+		    background-color: #99e2d0;
+		    width: 66px;
+		    right: 15px;
+		    top: 15;
+		    top: 15px;
+		    border-radius: 3px;
+		    padding: 6px;
+			}
 		}
+
 		.fa-heart {
 			position: absolute;
 			right: 50px;
